@@ -15,7 +15,7 @@
 # Afondiel  |  30.01.2021 | Creation 
 # Afondiel  |  06.02.2021 | Last modification 
 
-
+import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -37,10 +37,16 @@ import functions
 """ 
 Main : This file is the main module
 """
+
+# get the current file
+cur_path = os.path.dirname(__file__)
+#input frame 
+frame_path = os.path.relpath('..\\outro\\test2.mp4', cur_path)
+
 if __name__ == "__main__" :
 
     # Read the frame/image and return a multidimensional matrix/vector of the frame/image pixels
-    cap = cv2.VideoCapture('test2.mp4')
+    cap = cv2.VideoCapture(frame_path)
 	
 	# main loop
     while(cap.isOpened()):
