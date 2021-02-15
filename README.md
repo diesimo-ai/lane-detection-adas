@@ -2,22 +2,14 @@
 
 This is a real time self-driving computer vision project intended to detect a road lane.
 
-# Tools requirements : 
-<cv2> : opencv standard library 
-   	- Provides functionalities for image processing
-   <numpy> : standard library
-		- Provides multidimensional arrays and linear algebra tools, optimized for speed
-   <matplotlib> :standard library 
-		- Provides scientific plottin
-     
- # Libraries requirements : 
+ ## Libraries requirements : 
  
  - Python3.7
  - opencv
  - numpy
  - matplotlib
  
- # Usage :
+ ## Usage :
  
 ```
 Python3 lany.py
@@ -32,5 +24,5 @@ Python3 lany.py
 - Real time lane detection vizualition
 
 
-* : feature on going ...
+(*) : feature on going ...
  
