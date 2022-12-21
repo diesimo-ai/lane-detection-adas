@@ -22,12 +22,13 @@ or run the bash script if you're on linux-based os
 
 ```bash
 #!/bin/bash
-sudo apt-get install python3-pip
-sudo pip3 install open-cv-contrib-python
 sudo apt-get update
+sudo apt-get install python3-pip
 sudo apt install python3-opencv
 sudo pip3 install numpy
 sudo pip3 install matplotlib
+sudo pip3 install open-cv-contrib-python
+
 ```
  ## Usage
 
