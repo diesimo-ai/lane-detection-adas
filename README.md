@@ -18,7 +18,7 @@ This version is NOT yet availaible to work with the camera, robots or even real 
 ```
 pip install -r requirements.txt
 ```
-or run the bash script if you're on linux
+or run the bash script if you're on linux-based os
 
 ```bash
 #!/bin/bash
