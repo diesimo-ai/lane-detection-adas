@@ -1,4 +1,4 @@
-# File : functions.py 
+# File : img_processing.py 
 #
 # Description : This is a real time self-driving computer vision project intended to detect 
 # 				a road lane 
@@ -13,7 +13,7 @@
 #
 # File history :
 # Afondiel  |  30.01.2021 | Creation 
-# Afondiel  |  06.02.2021 | Last modification 
+# Afondiel  |  21.12.2022 | Last modification 
 
 from cv2 import cv2
 import numpy as np
