@@ -32,7 +32,7 @@ sudo pip3 install open-cv-contrib-python
 ```
  ## Usage
 
-To start the systems :  
+To start the system
 ```python 
 python main.py
 ```
