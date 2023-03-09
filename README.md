@@ -11,24 +11,20 @@ This is a real time self-driving project for lane detection applied computer vis
   - plug in with a camera (@todo)
 - `output`
   - Real time lane detection monitoring
- 
+
 This version is NOT yet availaible to work with the camera, robots or even real vehicles, but to be done soon.
+## Applications
+- Path planning
+- Vehicle Lateral Control for Self-driving cars
  ## Libraries depedencies
- 
+
+```
+conda install -c conda-forge --file requirements.txt
+```
+or
+
 ```
 pip install -r requirements.txt
-```
-or run the bash script if you're on linux-based os
-
-```bash
-#!/bin/bash
-sudo apt-get update
-sudo apt-get install python3-pip
-sudo apt install python3-opencv
-sudo pip3 install numpy
-sudo pip3 install matplotlib
-sudo pip3 install open-cv-contrib-python
-
 ```
  ## Usage
 
@@ -40,14 +36,14 @@ python main.py
 ## Contrubution
 Feel free to pull request if you some great ideas to share and take this project to the next level
 
-
-    `@TODO tasks & features`
-    - add a logger for debugging and logging results
-    - add camera (sensor module) for handling camera config and 
-    - Test with camera in a dynamic environment (car or robot)
-    - add green marker between two lanes
-    - add different color between lane departure and inside lane
-
+```
+`@TODO tasks & features`
+- add a logger for debugging and logging results
+- add camera (sensor module) for handling camera config and 
+- Test with camera in a dynamic environment (car or robot)
+- add green marker between two lanes
+- add different color between lane departure and inside lane
+```
 
 
 # References
