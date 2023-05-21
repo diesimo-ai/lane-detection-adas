@@ -6,14 +6,16 @@
 This is a real time self-driving project for lane detection applied computer vision techniques.
 
 - `input`
-  - a single image (.jpeg, .png ...)
-  - recorded video (static frame)
-  - plug in with a camera (@todo)
+  - a single image/frame (.jpeg, .png ...)
+  - video stream : 
+    - static capturing from a recorded video of the scene
+    - dynamic capturing from a camera (@todo)
 - `output`
   - Real time lane detection monitoring
 
 This version is NOT yet availaible to work with the camera, robots or even real vehicles, but to be done soon.
 ## Applications
+
 - Path planning
 - Vehicle Lateral Control for Self-driving cars
  ## Libraries depedencies
@@ -26,7 +28,9 @@ or
 ```
 pip install -r requirements.txt
 ```
- ## Usage
+
+
+## Usage
 
 To start the system
 ```python 
@@ -34,7 +38,8 @@ python main.py
 ```
 
 ## Contrubution
-Feel free to pull request if you some great ideas to share and take this project to the next level
+
+- Coming upgrades : 
 
 ```
 `@TODO tasks & features`
