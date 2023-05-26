@@ -1,9 +1,9 @@
 ![GitHub](https://img.shields.io/github/license/afondiel/lanes-detection-adas)
-# Lane Detection for ADAS systems
+# Lane Detection for Self-Driving Cars & ADAS Systems
 
 ## Overview
 
-This is a real time self-driving project for lane detection applied computer vision techniques.
+A real-time lane detection applied computer vision techniques and deep learning.
 
 - `input`
   - a single image/frame (.jpeg, .png ...)
@@ -13,12 +13,14 @@ This is a real time self-driving project for lane detection applied computer vis
 - `output`
   - Real time lane detection monitoring
 
-This version is NOT yet availaible to work with the camera, robots or even real vehicles, but to be done soon.
 ## Applications
 
-- Path planning
-- Vehicle Lateral Control for Self-driving cars
- ## Libraries depedencies
+- Environment Perception
+- Motion Planning
+- Vehicle Lateral Control
+- Vehicle Longitudinal Control
+
+ ## Requirements
 
 ```
 conda install -c conda-forge --file requirements.txt
@@ -37,23 +39,22 @@ To start the system
 python main.py
 ```
 
-## Contrubution
+## Coming Upgrade Tasks & features
 
-- Coming upgrades : 
-
+`@TODO-List :`
 ```
-`@TODO tasks & features`
+- add a CNN model configuration & testing
 - add a logger for debugging and logging results
 - add camera (sensor module) for handling camera config and 
 - Test with camera in a dynamic environment (car or robot)
 - add green marker between two lanes
 - add different color between lane departure and inside lane
+- Add Unit testing
 ```
 
+## Release History
 
-# References
+- @TODO
 
-- [Towards Data Science article by Raj Uppala](https://towardsdatascience.com/advanced-lane-detection-for-autonomous-vehicles-using-computer-vision-techniques-f229e4245e41)
-- [Computer vision resources](https://github.com/afondiel/research-notes/tree/master/computer-vision-notes/documentation)
 
  
