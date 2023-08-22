@@ -107,7 +107,13 @@ def make_coordinates(image, line_parameters):
     - INPUT : image, line_parameters
     - OUTPUT : returns an array of the parameters extracted from the polynom
     """
-    slope, intercept = line_parameters
+    # prevent reading unknow values such as np.nan types
+    try:
+        slope, intercept = line_parameters
+    except TypeError:
+        slope, intercept = 0.001, 0
+    # slope, intercept = line_parameters
+
     # getting the shape of the image
     # print(image.shape)
     y1 = image.shape[0]
