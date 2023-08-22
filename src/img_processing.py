@@ -13,9 +13,10 @@
 #
 # File history :
 # Afondiel  |  30.01.2021 | Creation 
-# Afondiel  |  21.12.2022 | Last modification 
+# Afondiel  |  22.08.2023 | Last modification 
 
-from cv2 import cv2
+import cv2
+# from cv2 import cv2
 import numpy as np
 
 
@@ -97,8 +98,8 @@ def average_slope_intercept(image, lines):
 
     return np.array([left_line, right_line]) 
     
-    # print(left_fit_average)
-    # print(right_fit_average)
+    print(left_fit_average)
+    print(right_fit_average)
 
 def make_coordinates(image, line_parameters):
     """ 

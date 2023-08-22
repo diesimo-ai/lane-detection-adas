@@ -13,18 +13,18 @@
 #
 # File history :
 # Afondiel  |  30.01.2021 | Creation 
-# Afondiel  |  21.12.2022 | Last modification 
+# Afondiel  |  22.08.2023 | Last modification 
 
+import sys
 import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-# all namespaces from the functions module are now visible here
+# all namespaces from img_processing module are now visible here
 import img_processing
 
 
-
-def lanes_start():
+def start_lane_det(img_frame):
     """
         Global approach and strategy : 
         1. Convert the original frame/image to grayscale for easy and quick treatment
@@ -35,13 +35,9 @@ def lanes_start():
         5. Hough transform
         6. Optimizing
     """
-    # get the current file
-    cur_path = os.path.dirname(__file__)
-    #input frame 
-    frame_path = os.path.relpath('..\\data\\test2.mp4', cur_path)
 
     # Read the frame/image and return a multidimensional matrix/vector of the frame/image pixels
-    cap = cv2.VideoCapture(frame_path)
+    cap = cv2.VideoCapture(img_frame)
     
     # main loop
     while(cap.isOpened()):
@@ -59,10 +55,10 @@ def lanes_start():
             - All this procedure is used by the canny function which detects the pixel frame/image with quick intensity 
             change by comparing thresholds values  
         """
-        canny_frm = functions.canny(frame)
+        canny_frm = img_processing.canny(frame)
 
         # 4. cropped frame/image with the mask
-        cropped_frm = functions.region_of_interest(canny_frm) 
+        cropped_frm = img_processing.region_of_interest(canny_frm) 
 
         # 5. Apply hough transform (r , teta) : shall be small for better precision
         #  HoughLinesP parameters :  r = 2 pixels , teta=1 degree, threshold = 100, empty array, ...
@@ -70,15 +66,15 @@ def lanes_start():
         
         # 6. optimizing
         # average multiples slope in the lines to a single slope line
-        averaged_lines = functions.average_slope_intercept(frame, lines)
+        averaged_lines = img_processing.average_slope_intercept(frame, lines)
         # display line frame/image
-        line_frm = functions.display_lines(frame, averaged_lines)
+        line_frm = img_processing.display_lines(frame, averaged_lines)
 
         # merged the gradient frame/image into the colored frame/image
         combo_frm = cv2.addWeighted(frame, 0.8, line_frm, 1, 1)
         # Creates a window to display the line frame/image
         cv2.imshow('result', combo_frm)
-        # Display the frame/image during 1msn and abort the system if the a keyboard is pressed
+        # Display the frame/image during 1min and abort the system if the a keyboard is pressed
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     cap.release()
