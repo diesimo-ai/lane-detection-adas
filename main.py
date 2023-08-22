@@ -15,14 +15,20 @@
 # Afondiel  |  30.01.2021 | Creation 
 # Afondiel  |  22.08.2023 | Last modification 
 
+import sys
 import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-
-import src.lanes_launch 
+# local packages
 import src.img_processing 
+from src.launch_lane import start_lane_det
+
+# load the input frame 
+frame_path = os.path.relpath('.\\data\\camera_video.mp4',  os.path.dirname(__file__))
+
 
 if __name__ == "__main__" :
-    # start the lanes
-    lanes_start()
+
+    # launch the system
+    start_lane_det(frame_path)
