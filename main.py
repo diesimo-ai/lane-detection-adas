@@ -13,15 +13,15 @@
 #
 # File history :
 # Afondiel  |  30.01.2021 | Creation 
-# Afondiel  |  21.12.2022 | Last modification 
+# Afondiel  |  22.08.2023 | Last modification 
 
 import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-# all namespaces from the img_processing module are now visible here
-import modules.img_processing
-import modules.lanes_launch
+
+import src.lanes_launch 
+import src.img_processing 
 
 if __name__ == "__main__" :
     # start the lanes
