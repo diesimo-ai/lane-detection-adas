@@ -25,7 +25,7 @@ import src.img_processing
 from src.launch_lane import start_lane_det
 
 # load the input frame 
-frame_path = os.path.relpath('.\\data\\camera_video.mp4',  os.path.dirname(__file__))
+frame_path = os.path.relpath('.\\data\\driving_video.mp4',  os.path.dirname(__file__))
 
 
 if __name__ == "__main__" :
