@@ -31,6 +31,7 @@ python=3.7.*
 numpy
 matplotlib
 opencv
+opencv-contrib-python
 ```
 
 To install all package from the requirements.txt file via conda:
