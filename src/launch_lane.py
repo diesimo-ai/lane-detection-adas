@@ -74,7 +74,7 @@ def start_lane_det(img_frame):
         combo_frm = cv2.addWeighted(frame, 0.8, line_frm, 1, 1)
         # Creates a window to display the line frame/image
         cv2.imshow('result', combo_frm)
-        # Display the frame/image during 1min and abort the system if the a keyboard is pressed
+        # Display the frame/image during 1ms and abort the system if the a keyboard is pressed
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     cap.release()
