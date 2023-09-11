@@ -23,6 +23,7 @@ The system has several situations and can be used in many situations:
 - Lane departure warning systems
 - Lane-keeping assistant technology (vehicle longitudinal & lateral control)
 - Hand-free highway driving systems (during steering takeover)
+- [Kodiak Robotics](https://kodiak.ai/) uses lane lines detection for its [self-driving truck (KodiakDriver)](https://kodiak.ai/technology/) stack to navigate in the world
 
  ## Requirements & dependency packages
 
